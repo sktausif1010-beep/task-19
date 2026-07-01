@@ -2,22 +2,22 @@ const services = [
     {
         name: "Dry Cleaning",
         price: 999,
-        image: "/images/dry-cleaning.jpg"
+        image: "dry-cleaning.jpg"
     },
     {
         name: "Leather Cleaning",
         price: 1499,
-        image: "/images/leather-cleaning.jpg"
+        image: "leather-cleaning.jpg"
     },
     {
         name: "stain Removal",
         price: 799,
-        image: "/images/stain-removal.jpg"
+        image: "stain-removal.jpg"
     },
     {
         name: "wedding Dress Cleaning",
         price: 899,
-        image: "/images/wedding-dress.jpg"
+        image: "wedding-dress.jpg"
     },
 ];
 
