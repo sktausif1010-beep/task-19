@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>LOGO</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="user-area">
+            <span class="username">Hello, User</span>
+            <button class="logout-btn">Logout</button>
+        </div>
+
+    </nav>
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="container">
+
+        <!-- LEFT PANEL -->
+
+        <div class="left-panel">
+
+            <h2>Added Items</h2>
+
+            <div id="cartItems">
+
+                <p class="empty-message">
+                    No Items Added
+                </p>
+
+            </div>
+
+            <div class="total-box">
+                <h3>Total Amount</h3>
+                <h2>₹ <span id="totalAmount">0</span></h2>
+            </div>
+
+            <hr>
+
+            <div class="booking-form">
+
+                <h2>Book Now</h2>
+
+                <form id="bookingForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Book Now
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+
+        <div class="right-panel">
+
+            <h1>Browse Our Services</h1>
+
+            <p class="description">
+                Choose from our premium services and add them to your booking list.
+            </p>
+
+            <div id="serviceContainer">
+
+                <!-- Service Card -->
+
+                <div class="service-card">
+
+                    <img
+                        id="serviceImage"
+                        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800"
+                        alt="service"
+                    >
+
+                    <h2 id="serviceName">
+                        Home Cleaning
+                    </h2>
+
+                    <h3>
+                        ₹
+                        <span id="servicePrice">
+                            999
+                        </span>
+                    </h3>
+
+                    <div class="service-buttons">
+
+                        <button id="skipBtn" class="skip-btn">
+                            Skip Item
+                        </button>
+
+                        <button id="addBtn" class="add-btn">
+                            Add Item
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom-section">
+
+                <p>
+                    Add services to your cart before proceeding with booking.
+                </p>
+
+                <div class="bottom-buttons">
+
+                    <button id="cartBtn">
+                        Add to Cart
+                    </button>
+
+                    <button id="bookBtn">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
